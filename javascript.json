@@ -50,6 +50,14 @@
 		],
 		"description": "mostrar una bandera"
 	},
+	// comnetarios script js:
+	"comentario": {
+		"prefix": "comment - marce",
+		"body": [
+			"/* $1 */",
+		],
+		"description": "comentario"
+	},
 	// console.log:
 	"list snippets": {
 		"prefix": "snippetm - MARCE",
