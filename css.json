@@ -1,0 +1,23 @@
+
+{
+	// Example:
+	// "Print to console": {
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+
+	//html5 marce
+	"css comentarios":{
+		"scope": "css, html",
+		"prefix": "comment css - marce",
+		"body": [
+			"/* $1 */"
+		]
+	}
+
+
+}

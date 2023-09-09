@@ -1,8 +1,4 @@
 {
-	// Place your snippets for html here. Each snippet is defined under a snippet name and has a prefix, body and 
-	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
-	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
-	// same ids are connected.
 	// Example:
 	// "nombre de mi snipet": {
 	// 	"prefix": "log",
@@ -14,7 +10,6 @@
 	// }
 	
 	//html5 marce
-	//test
 	"html_marce":{
 		"scope": "html,php",
 		"prefix": "html_marce",
@@ -35,21 +30,50 @@
 	//html5 marce
 	"html comentarios":{
 		"scope": "html,php",
-		"prefix": "comment",
+		"prefix": "comment - marce",
 		"body": [
-			"<!-- $1 -->",
+			"<!-- $1 -->"
 		]
 	},
 	//php marce
 	"php ini":{
 		"scope": "html,php",
-		"prefix": "phpini",
+		"prefix": "phpini - marce",
 		"body": [
 			"<?php",
 			"  $1",
-			"?>",
+			"?>"
 		],
 		"description": "php script"
+	},
+	//php foreach
+	"php foreach":{
+		"scope": "html,php",
+		"prefix": "foreach - marce",
+		"body": [
+			"<?php foreach ($1) : ?>",
+			"<?php endforeach ?>"
+		],
+		"description": "php foreach"
+	},
+	//php if
+	"php if":{
+		"scope": "html,php",
+		"prefix": "if - marce",
+		"body": [
+			"<?php if ($1) : ?>",
+			"<?php endif ?>"
+		],
+		"description": "php if"
+	},
+	//php inline
+	"php ini line":{
+		"scope": "html,php",
+		"prefix": "phpini-line - marce",
+		"body": [
+			"<?php $1 ?>"
+		],
+		"description": "php script php ini"
 	},
 	//debbuger php var_dump-die
 	"php script":{
@@ -60,16 +84,57 @@
 			"echo '<pre id=\"testdebugg\" style=\"display: none;\">';",
 			"    var_dump('TEST: ',$1); //$2die($3);",
 			"echo '</pre>';",
-			"?>",
+			"?>"
 		],
 		"description": "php script"
 	},
-	//php marce
-	"die debugg":{
+
+	//php debbuger /**/ marce
+	"php debbuger 2":{
 		"scope": "html,php",
-		"prefix": "dieee-",
-		"body": "die('$1');",
-		"description": "php script"
+		"prefix": "debbuger_php_2 - marce",
+		"body": [
+			"<?php",
+			"/* INI: TEST DEBUGGER */",
+			"var_dump($1);",
+			"/* END: TEST DEBUGGER */",
+			"?>"
+		],
+		"description": "php debbuger 2"
 	},
+
+	//php debbuger /**/ marce
+	"php debbuger 1":{
+		"scope": "html,php",
+		"prefix": "debbuger_php_1 DIE - marce",
+		"body": [
+			"<?php",
+			"/* INI: TEST DEBUGGER */",
+			"var_dump($1); die();",
+			"/* END: TEST DEBUGGER */",
+			"?>"
+		],
+		"description": "php debbuger 1"
+	},
+
+	//estilos de test
+	"estilos de test":{
+		"scope": "html,php",
+		"prefix": "mmestilos - marce",
+		"body": " style=\"border: 2px solid rgb(10, 251, 66)\";><!-- style de test @borrar --",
+		"description": "marcar "
+	},
+	//tag para gergar estilos
+	"tag style":{
+		"scope": "html,php",
+		"prefix": "style - marce",
+		"body": [
+			"<!-- test @borrar -->",
+			"<style type=\"text/css\">",
+			"   $1",
+			"</style>"
+		],
+		"description": "tag style"
+	}
 
 }
