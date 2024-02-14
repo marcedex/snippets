@@ -1,3 +1,4 @@
 # snippets
 snipett vscode
-Ruta: root\AppData\Roaming\Code\User\snippets
+root: C:\Users\USUARIO
+Ruta: [root]\AppData\Roaming\Code\User\snippets
